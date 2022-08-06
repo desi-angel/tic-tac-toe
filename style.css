@@ -1,16 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
 :root{
     --clr-1: #F97316;
-    --clr-2: #346f6b; 
+    --clr-2: #4E3E67; 
+    --bg-clr: #f0efe1;
 }
 *{
     box-sizing: border-box;
     margin: 0;
 }
 body{
+    background-color: var(--bg-clr);
     height: 100vh;
     font-family: 'Bungee', cursive;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 h1{
     font-size: 5rem;
@@ -28,4 +34,30 @@ footer{
     justify-content: center;
     align-items: center;
     padding: 0.75em;
+}
+.gameboard{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+}
+.boxes{
+    width: 150px;
+    height: 150px;
+    background-color: var(--clr-1);
+    color: var(--clr-2);
+    text-align: center;
+    padding: 40px 0;
+    font-size: 5rem;
+}
+.boxes:hover{
+    cursor: pointer;
+}
+.buttons{
+    display: flex;
+    gap: 5em;
+    margin-bottom: 3em;
+}
+.btn{
+    font-family: inherit;
+    padding: 1em 4em;
 }
