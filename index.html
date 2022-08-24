@@ -14,19 +14,43 @@
         <h1>Tic Tac Toe</h1>
     </header>
     <div class="buttons">
-        <button class="btn">Player</button>
+        <button class="btn addPlayer">Add Player</button>
         <button class="btn">AI Bot</button>
     </div>
+    <div class="message">
+    </div>
+    <div class="modal">
+        <div class="modal-content">
+                <div class="player">
+                    <label for="name1">Player 1:</label>
+                    <input type="text" name="player1" id="name1" required>
+                    <button class="mark player1" value="x">x</button>
+                    <button class="mark player1" value="o">o</button>
+                    
+                </div>
+
+                <div class="player">
+                    <label for="name2">Player 2:</label>
+                    <input type="text" name="player2" id="name2" required>
+                    <button class="mark player2" value="x">x</button>
+                    <button class="mark player2" value="o" >o</button>
+                </div>
+
+                <div>
+                    <button class="start btn">Start</button>
+                </div>
+        </div>
+    </div>
     <div class="gameboard">
-        <div class="boxes" data-number="1"></div>
-        <div class="boxes" data-number="2"></div>
-        <div class="boxes" data-number="3"></div>
-        <div class="boxes" data-number="4"></div>
-        <div class="boxes" data-number="5"></div>
-        <div class="boxes" data-number="6"></div>
-        <div class="boxes" data-number="7"></div>
-        <div class="boxes" data-number="8"></div>
-        <div class="boxes" data-number="9"></div>
+        <div class="boxes" data-index="0"></div>
+        <div class="boxes" data-index="1"></div>
+        <div class="boxes" data-index="2"></div>
+        <div class="boxes" data-index="3"></div>
+        <div class="boxes" data-index="4"></div>
+        <div class="boxes" data-index="5"></div>
+        <div class="boxes" data-index="6"></div>
+        <div class="boxes" data-index="7"></div>
+        <div class="boxes" data-index="8"></div>
     </div>
     <footer>
         <p>
